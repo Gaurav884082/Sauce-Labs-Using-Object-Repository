@@ -1,0 +1,9 @@
+ChromeDriver = C:\\SeleniumCompletePrograms\\ObjectRepository_02\\ChromeBrowserJars\\chromedriver.exe
+FirefoxDriver = C:\\SeleniumCompletePrograms\\ObjectRepository_02\\EdgeBrowserJars\\msedgedriver.exe
+EdgeDriver = C:\\SeleniumCompletePrograms\\ObjectRepository_02\\FirefoxBrowserJars\\geckodriver.exe
+
+baseUrl= https://www.saucedemo.com/
+Uname= user-name
+Psd = password
+SignIn=//input[@id='login-button']
+ExcelSheet=C:\\SeleniumCompletePrograms\\ObjectRepository_01\\TestData\\TestData2.xlsx

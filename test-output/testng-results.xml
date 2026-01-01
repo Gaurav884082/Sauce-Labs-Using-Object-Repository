@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-01T15:32:47 IST" name="Default suite" finished-at="2026-01-01T15:32:58 IST" duration-ms="11185">
+    <groups>
+    </groups>
+    <test started-at="2026-01-01T15:32:47 IST" name="Default test" finished-at="2026-01-01T15:32:58 IST" duration-ms="11185">
+      <class name="ObjectRepoDemo.ObjTestDemo">
+        <test-method signature="CofigRead()[pri:0, instance:ObjectRepoDemo.ObjTestDemo@31e75d13]" started-at="2026-01-01T15:32:47 IST" name="CofigRead" finished-at="2026-01-01T15:32:58 IST" duration-ms="11047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CofigRead -->
+      </class> <!-- ObjectRepoDemo.ObjTestDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
