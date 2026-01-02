@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-01T15:32:47 IST" name="Default suite" finished-at="2026-01-01T15:32:58 IST" duration-ms="11185">
+  <suite started-at="2026-01-02T19:51:21 IST" name="Default suite" finished-at="2026-01-02T19:52:09 IST" duration-ms="48581">
     <groups>
     </groups>
-    <test started-at="2026-01-01T15:32:47 IST" name="Default test" finished-at="2026-01-01T15:32:58 IST" duration-ms="11185">
+    <test started-at="2026-01-02T19:51:21 IST" name="Default test" finished-at="2026-01-02T19:52:09 IST" duration-ms="48581">
       <class name="ObjectRepoDemo.ObjTestDemo">
-        <test-method signature="CofigRead()[pri:0, instance:ObjectRepoDemo.ObjTestDemo@31e75d13]" started-at="2026-01-01T15:32:47 IST" name="CofigRead" finished-at="2026-01-01T15:32:58 IST" duration-ms="11047" status="PASS">
+        <test-method signature="CofigRead()[pri:0, instance:ObjectRepoDemo.ObjTestDemo@31e75d13]" started-at="2026-01-02T19:51:21 IST" name="CofigRead" finished-at="2026-01-02T19:52:09 IST" duration-ms="48440" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CofigRead -->

@@ -1,6 +1,7 @@
 package ObjectRepoDemo;
 
 import java.io.File;
+
 import java.io.FileInputStream;
 import java.time.Duration;
 
@@ -9,8 +10,11 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
+import library.Reusability;
 import obj_Utility.ConfigFileReader;
 
 public class ObjTestDemo {
@@ -18,10 +22,21 @@ public class ObjTestDemo {
 	public void CofigRead() throws Exception {
 		ConfigFileReader config = new ConfigFileReader();
 
-		System.setProperty("webdriver.chrome.driver", config.getChromePath());
-		WebDriver driver = new ChromeDriver();
+		String[] browsers = {"chrome", "edge", "firefox"};
+	    for (String browser : browsers) {
+	        WebDriver driver;
+	        if (browser.equalsIgnoreCase("chrome")) {
+	            driver = new ChromeDriver();
+	        }
+	        else if (browser.equalsIgnoreCase("edge")) {
+	            driver = new EdgeDriver();
+	        }
+	        else {
+	            driver = new FirefoxDriver();
+	        }
 		driver.get(config.getAppURL());
 		driver.manage().window().maximize();
+		Reusability.capturedscreenshots(driver, "Website Launch");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		File src=new File(config.Excelsheet());//in java File is a class
 		FileInputStream fis=new FileInputStream(src);
@@ -40,6 +55,9 @@ public class ObjTestDemo {
 		driver.findElement(By.id(config.PWord())).sendKeys(data1);
 		Thread.sleep(5000);
 		driver.findElement(By.xpath(config.SignButton())).click();
+		Reusability.capturedscreenshots(driver, "Sauce Labs Login Page ");
+		Thread.sleep(3000);
+        driver.quit();
 	}
-
+	}
 }
